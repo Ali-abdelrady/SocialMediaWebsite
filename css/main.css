@@ -316,7 +316,8 @@ body {
 
 }
 
-.avatar-login i{
+
+/*.avatar-login i{
   font-size: 13px;
   position: absolute;
   top: 168px;
@@ -330,7 +331,7 @@ border-radius: 50%;
 display: flex;
 align-items:center;
 justify-content: center;
-}
+}*/
 .form-login .avatar-login img {
   width: 95px;
   height: 95px;
@@ -454,4 +455,38 @@ position: absolute;
 .circle2 img {
   width: 55px;
   height: 55px;
+}
+
+@media (max-width : 950px) {
+
+  .circle1{
+    height: 0px;
+    width: 0px;
+  }
+  .circle2{
+    height: 0px;
+    width: 0px;
+  }
+  .circle2 img{
+    height: 0px;
+    width: 0px;
+  }
+  
+}
+@media (max-width : 800px) {
+.sec1{
+  background: white;
+ 
+ 
+}
+.sec1 h2{
+  text-shadow: none;
+}
+  .sec2{
+   position: absolute;
+  width: 100%;
+}
+.form-login form input{
+  width: 320px;
+}
 }
