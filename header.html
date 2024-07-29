@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="ieee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://friendkit.cssninja.io/assets/img/vector/logo/friendkit-bold.svg" alt="Logo">
+        </div>
+        <nav class="nav-icons">
+            <a href="#" class="icon" id="heart-icon"><i class="fas fa-heart"></i></a>
+            <div class="dropdown">
+                <a href="#" class="icon" id="bell-icon"><i class="fas fa-bell"></i></a>
+                <div class="dropdown-menu" id="bell-dropdown">
+                    <div class="dropdown-header">Notifications</div>
+                    <ul class="dropdown-list">
+                        <li>
+                            <img src="david.jpg" alt="David Kim">
+                            <div>
+                                <span>David Kim</span> commented on <strong>your post</strong>.
+                                <small>30 minutes ago</small>
+                            </div>
+                            <i class="fas fa-comment"></i>
+                        </li>
+                        <li>
+                            <img src="daniel.jpg" alt="Daniel Wellington">
+                            <div>
+                                <span>Daniel Wellington</span> liked your <strong>profile</strong>.
+                                <small>43 minutes ago</small>
+                            </div>
+                            <i class="fas fa-heart"></i>
+                        </li>
+                        <li>
+                            <img src="stella.jpg" alt="Stella Bergmann">
+                            <div>
+                                <span>Stella Bergmann</span> shared a <strong>New video</strong> on your wall.
+                                <small>Yesterday</small>
+                            </div>
+                            <i class="fas fa-video"></i>
+                        </li>
+                        <li>
+                            <img src="elise.jpg" alt="Elise Walker">
+                            <div>
+                                <span>Elise Walker</span> shared an <strong>Image</strong> with you and 2 other people.
+                                <small>2 days ago</small>
+                            </div>
+                            <i class="fas fa-image"></i>
+                        </li>
+                    </ul>
+                    <div class="dropdown-footer">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <div class="profile" onclick="toggleMenu()">
+            <a href="#" class="icon" id="cart-icon"></a>
+            <img src="jenna.webp" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="menu" id="dropdown-menu">
+            <div class="menu-header">Jenna Davis</div>
+            <ul class="menu-list">
+                <li><img src="jenna.webp" alt="Profile Picture">Jenna Davis</li>
+                <li><img src="hanzo.svg" alt="Css Ninja">Css Ninja</li>
+                <li><img src="fastpizza.svg" alt="Fast Pizza">Fast Pizza</li>
+                <li><img src="slicer.svg" alt="Slicer">Slicer</li>
+                <li><i class="fas fa-cog"></i>Settings</li>
+                <li><i class="fas fa-question-circle"></i>Help</li>
+                <li><i class="fas fa-sign-out-alt"></i>Log out</li>
+            </ul>
+        </div>
+        <div class="friend-requests-menu" id="friend-requests-menu">
+            <div class="friend-requests-header">Friend Requests</div>
+            <ul class="friend-requests-list">
+                <li>
+                    <img src="bobby.jpg" alt="Bobby Brown">
+                    <div>
+                        <span>Bobby Brown</span>
+                        <small>Najeel verwick is a common friend</small>
+                    </div>
+                    <div class="action-icons">
+                        <i class="fas fa-user-plus"></i>
+                        <i class="fas fa-user-times"></i>
+                    </div>
+                </li>
+                <li>
+                    <img src="dan.jpg" alt="Dan Walker">
+                    <div>
+                        <span>Dan Walker</span>
+                        <small>You have 4 common friends</small>
+                    </div>
+                    <div class="action-icons">
+                        <i class="fas fa-user-plus"></i>
+                        <i class="fas fa-user-times"></i>
+                    </div>
+                </li>
+                <li>
+                    <img src="nelly.webp" alt="Nelly Schwartz">
+                    <div>
+                        <span>Nelly Schwartz</span>
+                        <small>You are now friends</small>
+                    </div>
+                </li>
+                <li>
+                    <img src="milly.jpg" alt="Milly Augustine">
+                    <div>
+                        <span>Milly Augustine</span>
+                        <small>You have 8 common friends</small>
+                    </div>
+                    <div class="action-icons">
+                        <i class="fas fa-user-plus"></i>
+                        <i class="fas fa-user-times"></i>
+                    </div>
+                </li>
+                <li>
+                    <img src="elise.jpg" alt="Elise Walker">
+                    <div>
+                        <span>Elise Walker</span>
+                        <small>You are now friends</small>
+                    </div>
+                </li>
+                <li>
+                    <img src="edward.jpeg" alt="Edward Mayers">
+                    <div>
+                        <span>Edward Mayers</span>
+                        <small>You are now friends</small>
+                    </div>
+                </li>
+            </ul>
+            <div class="friend-requests-footer">
+                <a href="#">View All</a>
+            </div>
+        </div>
+    </header>
+    <script src="ieee.js"></script>
+</body>
+</html>

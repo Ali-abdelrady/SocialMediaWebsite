@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-icons .icon {
+    margin: 0 15px;
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    position: relative;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.nav-icons .icon:hover {
+    opacity: 1;
+}
+
+.nav-icons .icon.active::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 8px;
+    height: 8px;
+    background-color: #00c8ff;
+    border-radius: 50%;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 275px;
+    margin-right: 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 8px 15px;
+    padding-left: 35px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    color: #999;
+    font-size: 1em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile .icon {
+    color: #333;
+    font-size: 1.2em;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00c8ff;
+}
+
+.menu,  .friend-requests-menu, .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu {
+    top: 60px;
+    right: 20px;
+    width: 300px;
+}
+
+.friend-requests-menu {
+    top: 60px;
+    right: calc(50% + 75px);
+    width: 300px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    top: 50px; 
+    right: 0;
+    width: 350px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.menu-header, .friend-requests-header, .dropdown-header {
+    display: block;
+    text-transform: uppercase;
+    font-size: .68rem;
+    font-weight: 500;
+    color: #a2a5b9;
+}
+
+.menu-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu-list, .friend-requests-list, .dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li,  .friend-requests-list li, .dropdown-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-list li:hover,  .friend-requests-list li:hover, .dropdown-list li:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-list li img,  .friend-requests-list li img, .dropdown-list li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu-list li i {
+    margin-right: 10px;
+}
+
+.friend-requests-header {
+    padding: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.friend-requests-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.friend-requests-list li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.friend-requests-list li div {
+    flex-grow: 1;
+}
+
+.friend-requests-list li .action-icons {
+    display: flex;
+}
+
+.friend-requests-list li .action-icons i {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #00c8ff;
+}
+
+.friend-requests-footer {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.friend-requests-footer a, .dropdown-footer a {
+    text-decoration: none;
+    color: #00c8ff;
+}
+
+/* Show Dropdown */
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
